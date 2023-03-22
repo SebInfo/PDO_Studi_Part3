@@ -17,10 +17,6 @@
         foreach($reals as $unRealisateur)
         {
             $result->execute(array(':monRealisateur'=>$unRealisateur));
-            if ($result === false)
-            {
-                die("erreur requête !");
-            }
             echo "<h2>".$unRealisateur."</h2>";
             ?>
             

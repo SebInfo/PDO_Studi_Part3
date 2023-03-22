@@ -7,9 +7,9 @@
     $dsn = "mysql:host=".DBHOST.";port=".DBPORT.";dbname=".DBBASE;
     $opt =
     [
-        // PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         //PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
+        //PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
         PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC,
     ];
     try {

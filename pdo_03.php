@@ -16,12 +16,8 @@
 
         foreach($reals as $unRealisateur)
         {
-            $result->bindParam(':monRealisateur', $unRealisateur, PDO::PARAM_INT);
+            $result->bindParam(':monRealisateur', $unRealisateur, PDO::PARAM_STR);
             $result->execute();
-            if ($result === false)
-            {
-                die("erreur requête !");
-            }
             echo "<h2>".$unRealisateur."</h2>";
             ?>
             

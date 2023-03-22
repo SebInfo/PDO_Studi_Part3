@@ -21,10 +21,6 @@
             $req="SELECT titre, realisateur, annee FROM film WHERE realisateur=:monRealisateur";
             $result = $bdd->prepare($req);
             $result->execute(array(':monRealisateur'=>$real));
-            if ($result === false)
-            {
-                die("erreur requête !");
-            }
             echo "<h2>".$real."</h2>";
             while($film = $result->fetch())
             {
